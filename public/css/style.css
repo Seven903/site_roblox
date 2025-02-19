@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+body {
+  background-image: url("https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/b/5/d/b5df22212253eda5f0cebe857cc84dd9a874a478.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+}
+body::before{
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+h1 {
+  font-family: "Anton", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100px;
+  letter-spacing: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+section div {
+  margin-top: 50px;
+  margin-bottom: -30px;
+}
+section div button {
+  background-color: white;
+  font-family: "Montserrat", serif;
+  font-size: 18px;
+  width: 350px;
+  height: 55px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+section div button:hover {
+  cursor: pointer;
+}
+.bt1:hover {
+  opacity: 0.5;
+}
+.bt2 {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgb(213, 213, 213);
+  color: #b4b4b4;
+}
+.bt2:hover {
+  opacity: 0.6;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+footer a{
+    font-family: "Montserrat", serif;
+    color: rgb(0, 153, 255);
+    padding-right: 50px;
+    padding-left: 35px;
+    font-size: 20px;
+    font-weight: bold ;
+}

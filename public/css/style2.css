@@ -1,0 +1,142 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}body{
+  font-family: "Montserrat", sans-serif;
+  background-image: url("https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/b/5/d/b5df22212253eda5f0cebe857cc84dd9a874a478.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+
+h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 80px;
+  letter-spacing: 3px;
+  text-align: center;
+  margin: 20px 0 10px; 
+}
+
+
+#container {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 40px; /* Aumentado para um tamanho maior */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  max-width: 500px; /* Largura aumentada */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 20px;
+  margin-top: -90px;
+}
+
+
+form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.dia, .mes, .ano {
+  display: inline-block;
+  width: 30%;
+  margin-right: 5px;
+}
+
+.ano {
+  margin-right: 0;
+}
+
+form select, form input[type="text"], form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px;
+  background: #2c2c2c;
+  border: 1px solid #444;
+  border-radius: 5px;
+  color: white;
+  outline: none;
+  font-size:17px ;
+}
+
+form select:focus{
+  border-color: #c1c1c1;
+  box-shadow: 0 0 5px #606060;
+}
+form input:focus {
+  border-color: #808486;
+  box-shadow: 0 0 5px #666767;
+}
+
+input[type="submit"] {
+  background-color: #ffffff;
+  color: black;
+  width: 400px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+input[type="submit"]:hover{
+  background-color: #c1c1c1;
+  border-color: #c1c1c1;
+  box-shadow: 0 0 5px #606060;
+}
+#container h4{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 30px;
+}input::placeholder{
+  font-size: 17px;
+}#close{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 48px;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s;
+}
