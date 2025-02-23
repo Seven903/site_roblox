@@ -57,7 +57,6 @@ function pegar_dados() {
       usuario: document.querySelector("#usuario").value,
       senha: document.querySelector("#senha").value,
     };
-
     enviar_dados(dados);
   } else {
     alert("Poer favor preecha os dados corretamente");
@@ -83,8 +82,6 @@ function enviar_dados(dados) {
       console.log(erro);
     });
 }
-document.querySelector("#enviar").addEventListener("click", (evento) => {
-  evento.preventDefault();
-
+document.querySelector("#enviar").addEventListener("click", () => {
   pegar_dados();
 });
