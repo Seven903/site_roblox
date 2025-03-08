@@ -9,46 +9,56 @@
       rel="icon"
       href="https://i.pinimg.com/474x/ae/3d/8b/ae3d8ba76d15d1b3aa0cff35ca2d5ffe.jpg"
     />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&icon_names=close" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&icon_names=close"
+    />
   </head>
   <body>
-    <span id="close" class="material-symbols-outlined">
-      close
-      </span>
-
-    <header>
+    <span id="close" class="material-symbols-outlined"> close </span>
+    <header class="mostrar">
       <h1>ROBLOX</h1>
     </header>
-    <section>
-        <div id="container">
-          <h4>Cadastre-se e divirta-se!</h4>
-      <form>
-        <label>Data de nascimento</label>
-        <div class="dia">
-          <select name="dia" id="dia">
-            <option selected disabled value="Dia">Dia</option>
-          </select>
-        </div>
-        <div class="mes">
-          <select name="mes" id="mes">
-            <option selected disabled value="mes">Mês</option>
-          </select>
-        </div>
-        <div class="ano">
-          <select name="ano" id="ano">
-            <option selected disabled value="ano">Ano</option>
-          </select>
-        </div>
+    <section class="mostrar">
+      <div id="container">
+        <h4>Cadastre-se e divirta-se!</h4>
+        <form>
+          <label>Data de nascimento</label>
+          <div class="dia">
+            <select name="dia" id="dia">
+              <option selected disabled value="Dia">Dia</option>
+            </select>
+          </div>
+          <div class="mes">
+            <select name="mes" id="mes">
+              <option selected disabled value="mes">Mês</option>
+            </select>
+          </div>
+          <div class="ano">
+            <select name="ano" id="ano">
+              <option selected disabled value="ano">Ano</option>
+            </select>
+          </div>
 
-        <label>Usuário</label>
-        <input id="usuario" required type="text" placeholder="Não use o seu nome real" />
+          <label>Usuário</label>
+          <input
+            id="usuario"
+            required
+            type="text"
+            placeholder="Não use o seu nome real"
+          />
 
-        <label>Senha</label>
-        <input id="senha" required type="password" placeholder="Crie uma senha" />
+          <label>Senha</label>
+          <input
+            id="senha"
+            required
+            type="password"
+            placeholder="Crie uma senha"
+          />
 
-        <input id="enviar" type="submit" value="Cadastra-se" />
-      </form>
-    </div>
+          <input id="enviar" type="submit" value="Cadastra-se" />
+        </form>
+      </div>
     </section>
     <script src="/js/script2.js"></script>
   </body>

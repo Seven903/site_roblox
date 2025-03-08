@@ -139,4 +139,20 @@ input[type="submit"]:hover{
   color: white;
   cursor: pointer;
   transition: color 0.3s;
+  z-index: 1;
+}
+
+.mostrar{
+  animation: pol 1.5s ease-in-out forwards;
+}
+
+@keyframes pol{
+  from{
+    opacity: 0;
+    transform: translatex(-50px);
+  }
+  to{
+    opacity: 1;
+    transform: none;
+  }
 }

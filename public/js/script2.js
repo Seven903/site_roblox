@@ -1,33 +1,33 @@
-let dia = document.querySelector("#dia");
+  let dia = document.querySelector("#dia");
 
-for (let i = 1; i <= 31; i++) {
-  let option_dia = document.createElement("option");
-  option_dia.value = i;
-  option_dia.textContent = i;
-  dia.appendChild(option_dia);
-}
+  for (let i = 1; i <= 31; i++) {
+    let option_dia = document.createElement("option");
+    option_dia.value = i;
+    option_dia.textContent = i;
+    dia.appendChild(option_dia);
+  }
 
-let mes = document.querySelector("#mes");
-let meses = [
-  "Janeiro",
-  "Fevereiro",
-  "Março",
-  "Abril",
-  "Maio",
-  "Junho",
-  "Julho",
-  "Agosto",
-  "Setembro",
-  "Outubro",
-  "Novembro",
-  "Dezembro",
-];
+  let mes = document.querySelector("#mes");
+  let meses = [
+    "Janeiro",
+    "Fevereiro",
+    "Março",
+    "Abril",
+    "Maio",
+    "Junho",
+    "Julho",
+    "Agosto",
+    "Setembro",
+    "Outubro",
+    "Novembro",
+    "Dezembro",
+  ];
 
-for (let m = 0; m < meses.length; m++) {
-  let option_mes = document.createElement("option");
-  option_mes.value = meses[m];
-  option_mes.textContent = meses[m];
-  mes.appendChild(option_mes);
+  for (let m = 0; m < meses.length; m++) {
+    let option_mes = document.createElement("option");
+    option_mes.value = meses[m];
+    option_mes.textContent = meses[m];
+    mes.appendChild(option_mes);
 }
 
 let ano = document.querySelector("#ano");
@@ -59,7 +59,7 @@ function pegar_dados() {
     };
     enviar_dados(dados);
   } else {
-    alert("Poer favor preecha os dados corretamente");
+    alert("Por favor preecha os dados corretamente");
   }
 }
 
